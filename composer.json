@@ -1,0 +1,20 @@
+{
+    "name": "jmichaelward/composer-wp",
+    "description": "Project for demonstrating Composer usage within a WordPress environment.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Ward",
+            "email": "jeremy.ward@webdevstudios.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ]
+}
