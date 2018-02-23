@@ -12,12 +12,19 @@
     "minimum-stability": "stable",
     "require": {
         "composer/installers": "^1.5",
-        "johnpbloch/wordpress": "4.9.4"
+        "johnpbloch/wordpress": "4.9.4",
+
+        "wpackagist-plugin/advanced-custom-fields": "5.6.*",
+        "webdevstudios/wd_s": "dev-master"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:webdevstudios/wd_s.git"
         }
     ]
 }
