@@ -1,1 +1,12 @@
+# Normally we would commit the lock file. We'll ignore it for now.
+composer.lock
+
+# Ignore the vendor directory, and ignore WordPress itself for now.
 vendor/
+wordpress/
+
+# Local configuration settings.
+wp-config-local.php
+
+# There may be a reason to track wp-content, but not right now.
+wp-content/
