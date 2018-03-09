@@ -10,6 +10,16 @@
         }
     ],
     "minimum-stability": "stable",
+    "scripts": {
+        "wds:ls": "echo \"Here are the files in this directory:\"; ls -la",
+        "wds:bash-script": "sh ./bin/bash-script.sh",
+        "wds:php-script": "@php ./bin/php-script.php"
+    },
+    "scripts-description": {
+        "wds:ls": "Lists the files in the current directory.",
+        "wds:bash-script": "Runs a custom bash script written for this presentation.",
+        "wds:php-script": "@php ./bin/php-script.php"
+    },
     "require": {
         "composer/installers": "^1.5",
         "johnpbloch/wordpress": "4.9.4"
