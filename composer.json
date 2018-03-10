@@ -24,5 +24,15 @@
             "type": "vcs",
             "url": "git@bitbucket.org:jmichaelward/composer-wp-scripts.git"
         }
-    ]
+    ],
+    "scripts": {
+        "wds:ls": "echo \"Here are the files in this directory:\"; ls -la",
+        "wds:bash-script": "sh ./vendor/bin/bash-script.sh",
+        "wds:php-script": "@php ./vendor/bin/php-script.php"
+    },
+    "scripts-descriptions": {
+        "wds:ls": "Lists the files in the current directory.",
+        "wds:bash-script": "Runs a custom bash script written for this presentation.",
+        "wds:php-script": "@php ./bin/php-script.php"
+    }
 }
