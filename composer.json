@@ -12,12 +12,17 @@
     "minimum-stability": "stable",
     "require": {
         "composer/installers": "^1.5",
-        "johnpbloch/wordpress": "4.9.4"
+        "johnpbloch/wordpress": "4.9.4",
+        "jmichaelward/composer-wp-scripts": "dev-master"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:jmichaelward/composer-wp-scripts.git"
         }
     ]
 }
