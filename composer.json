@@ -14,10 +14,23 @@
         "composer/installers": "^1.5",
         "johnpbloch/wordpress": "4.9.4"
     },
+    "require-dev": {
+        "jmichaelward/composer-wp-scripts": "dev-wordpress",
+        "wp-cli/wp-cli": "^1.5"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "sh ./vendor/bin/wp-setup.sh"
+        ]
+    },
     "repositories": [
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:jmichaelward/composer-wp-scripts.git"
         }
     ]
 }
