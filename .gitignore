@@ -6,6 +6,7 @@ vendor/
 wordpress/
 
 # Local configuration settings.
+.env
 wp-config-local.php
 
 # There may be a reason to track wp-content, but not right now.
