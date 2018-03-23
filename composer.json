@@ -19,9 +19,7 @@
         "wp-cli/wp-cli": "^1.5"
     },
     "scripts": {
-        "post-autoload-dump": [
-            "sh ./vendor/bin/wp-setup.sh"
-        ]
+        "wp:db-setup": "sh ./vendor/bin/wp-db-setup.sh"
     },
     "repositories": [
         {
