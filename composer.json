@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "jmichaelward/composer-wp-scripts": "dev-wordpress",
-        "wp-cli/wp-cli": "^1.5"
+        "jmichaelward/tinker": "dev-master"
     },
     "scripts": {
         "wp:db-setup": "sh ./vendor/bin/wp-db-setup.sh"
@@ -29,6 +29,10 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:jmichaelward/composer-wp-scripts.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:jmichaelward/tinker.git"
         }
     ]
 }
