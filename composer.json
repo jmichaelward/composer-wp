@@ -17,9 +17,6 @@
     "require-dev": {
         "jmichaelward/tinker": "dev-master"
     },
-    "scripts": {
-        "wp:db-setup": "sh ./vendor/bin/wp-db-setup.sh"
-    },
     "repositories": [
         {
             "type": "composer",
