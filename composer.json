@@ -15,7 +15,8 @@
         "johnpbloch/wordpress": "4.9.4"
     },
     "require-dev": {
-        "jmichaelward/tinker": "dev-master"
+        "jmichaelward/tinker": "dev-master",
+        "wp-cli/wp-cli": "^1.5"
     },
     "repositories": [
         {
