@@ -9,15 +9,43 @@
             "email": "jeremy.ward@webdevstudios.com"
         }
     ],
+    "package": {
+        "dist": {
+            "url": "https://webdevstudios.com/404-distributable-does-not-exist.zip",
+            "type": "zip"
+        },
+        "source": {
+            "url": "https://github.com/jmichaelward/composer-wp",
+            "type": "git"
+        }
+    },
+    "support": {
+        "email": "jeremy.ward@webdevstudios.com",
+        "issues": "https://github.com/jmichaelward/composer-wp/issues",
+        "wiki": "https://github.com/jmichaelward/composer-wp/wiki",
+        "docs": "https://github.com/jmichaelward/composer-wp/blob/master/README.mds"
+    },
     "minimum-stability": "stable",
     "require": {
+        "php": "^5.3.2 || ^7.0",
         "composer/installers": "^1.5",
-        "johnpbloch/wordpress": "4.9.4"
+        "johnpbloch/wordpress": "4.9.4",
+        "webdevstudios/wd_s": "dev-master",
+        "wpackagist-plugin/advanced-custom-fields": "^5.6",
+        "wpackagist-plugin/jetpack": "^5.9"
+    },
+    "require-dev": {
+        "wpackagist-plugin/wp-migrate-db": "1.0.2",
+        "wpackagist-plugin/query-monitor": "~2.17"
     },
     "repositories": [
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/jmichaelward/wd_s.git"
         }
     ],
     "scripts": {
@@ -29,5 +57,13 @@
         "wds:ls": "Lists the files in the current directory.",
         "wds:bash-script": "Runs a custom bash script written for this presentation.",
         "wds:php-script": "@php ./bin/php-script.php"
+    },
+    "extra" : {
+        "wordpress-install-dir": "./wordpress",
+        "installer-paths" : {
+            "./wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "./wordpress/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "./wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+        }
     }
 }
