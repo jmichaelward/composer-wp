@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
+        "composer/installers": "^1.5",
         "johnpbloch/wordpress": "4.9.4",
         "webdevstudios/wd_s": "dev-master",
         "wpackagist-plugin/advanced-custom-fields": "^5.6",
@@ -29,5 +30,13 @@
             "type": "git",
             "url": "https://github.com/jmichaelward/wd_s.git"
         }
-    ]
+    ],
+    "extra" : {
+        "wordpress-install-dir": "./wordpress",
+        "installer-paths" : {
+            "./wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "./wordpress/wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "./wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+        }
+    }
 }
