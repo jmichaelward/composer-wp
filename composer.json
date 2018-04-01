@@ -13,11 +13,5 @@
     "require": {
         "composer/installers": "^1.5",
         "johnpbloch/wordpress": "4.9.4"
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org"
-        }
-    ]
+    }
 }
