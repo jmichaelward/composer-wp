@@ -18,8 +18,6 @@
  * @package WordPress
  */
 
-define( 'WP_CONTENT_DIR', __DIR__ . '/wp-content' );
-
 if ( file_exists( __DIR__ . '/wp-config-local.php' ) ) {
 	require_once __DIR__ . '/wp-config-local.php';
 }
